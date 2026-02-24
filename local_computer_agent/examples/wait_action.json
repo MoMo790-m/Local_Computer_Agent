@@ -1,0 +1,8 @@
+{
+  "action_type": "wait",
+  "coordinates": null,
+  "payload": "1.0",
+  "expected_outcome": "A short delay completes (used to test the pipeline safely).",
+  "critical": false
+}
+

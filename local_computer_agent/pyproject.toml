@@ -1,0 +1,25 @@
+[project]
+name = "local-computer-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mohamed Medhat", email = "mohamed06832@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pyautogui>=0.9.54",
+    "opencv-python>=4.11.0.0",
+    "ImageHash>=4.3.1",
+    "pillow>=11.0.0",
+    "pydantic>=2.9.0",
+    "openai>=1.60.0",
+    "anyio>=4.4.0"
+]
+
+[project.scripts]
+local-computer-agent = "local_computer_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
