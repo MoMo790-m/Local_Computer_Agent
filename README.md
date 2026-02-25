@@ -13,7 +13,6 @@ verification strategy to keep actions safe and reliable.
 The Python package lives under `local_computer_agent/` and is managed with `uv`.
 
 ---
-
 ### Project structure
 
 ```text
