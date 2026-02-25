@@ -18,24 +18,26 @@ The Python package lives under `local_computer_agent/` and is managed with `uv`.
 
 ```text
 Local_Computer_Agent/
-  .gitignore
-  README.md              # This file
-  local_computer_agent/
-    pyproject.toml       # uv project configuration and dependencies
-    uv.lock              # uv lockfile
-    .python-version      # Python version pin
-    README.md            # Package-level quick start
-    examples/
-      wait_action.json   # Example AgentAction payload
-    src/local_computer_agent/
-      __init__.py
-      main.py            # Entry point and interactive REPL
-      command_router.py  # High-level commands: browser, code, file, dev, doctor
-      action_orchestrator.py  # Executes UI actions and wires verification
-      verification.py    # Tier 1 (pHash) + Tier 2 (VLM hook) verification
-      schemas.py         # Pydantic models (AgentAction, Tier1Result, Tier2Result)
-      planner.py         # Goal->steps planner (`plan ...`)
-      diagnostics.py     # Environment doctor for deps/config/runtime issues
+│
+├── .gitignore
+├── README.md
+├── pyproject.toml          # uv project configuration and dependencies
+├── uv.lock                 # uv lockfile
+├── .python-version         # Python version pin
+│
+├── examples/
+│   └── wait_action.json    # Example AgentAction payload
+│
+└── src/
+    └── local_computer_agent/
+        ├── __init__.py
+        ├── main.py                # Entry point and interactive REPL
+        ├── command_router.py      # High-level commands: browser, code, file, dev, doctor
+        ├── action_orchestrator.py # Executes UI actions and wires verification
+        ├── verification.py        # Tier 1 (pHash) + Tier 2 (VLM hook) verification
+        ├── schemas.py             # Pydantic models (AgentAction, Tier1Result, Tier2Result)
+        ├── planner.py             # Goal->steps planner (`plan ...`)
+        └── diagnostics.py         # Environment doctor for deps/config/runtime issues
 ```
 
 ---
